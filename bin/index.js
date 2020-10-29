@@ -13,4 +13,9 @@ program
 .description('refresh router ')
 .action(require('../lib/refresh.js'))
 
+program
+.command('add <name>')
+.description('add view template ')
+.action(require('../lib/addPage.js'))
+
 program.parse(process.argv)
