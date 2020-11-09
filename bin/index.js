@@ -18,4 +18,9 @@ program
 .description('add view template ')
 .action(require('../lib/addPage.js'))
 
+program
+.command('copy <name>')
+.description('copy view template ')
+.action(require('../lib/copied.js'))
+
 program.parse(process.argv)
