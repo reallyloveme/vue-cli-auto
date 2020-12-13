@@ -22,5 +22,9 @@ program
 .command('copy <name>')
 .description('copy view template ')
 .action(require('../lib/copied.js'))
+program
+.command('build')
+.description('build view template')
+.action(require('../lib/build.js'))
 
 program.parse(process.argv)
